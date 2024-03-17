@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Registration Form</title>
+    <meta name="viewport" content="width=device-width,
+      initial-scale=1.0"/>
+    <link rel="stylesheet" href="form.css" />
+  </head>
+  <body>
+    <div class="slidebar"> 
+      <ul>
+        <li><a class="active" href="#Home">Home</a></li><br>
+        <li><a href="news.html">News</a></li><br>
+        <li><a href="#contact">Contact</a></li><br>
+        <li><a href="#about">About</a></li><br>
+      </ul>            
+    </div>
+    <div class="div0">
+      <h1 class="title">Registration</h1>
+      <form action="#">
+        <div class="main-user-info">
+          <div class="user-input">
+            <label for="fullName">Full Name</label>
+            <input type="text"id="fullName"name="fullName"placeholder="Enter Full Name"/>               
+          </div>
+          <div class="user-input">
+            <label for="username">Username</label>
+            <input type="text"id="username" name="username"placeholder="Enter Username"/>                    
+          </div>
+          <div class="user-input">
+            <label for="email">Email</label>
+            <input type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter Email"/>
+          </div>
+          <div class="user-input">
+            <label for="phoneNumber">Phone Number</label>
+            <input type="text"
+                    id="phoneNumber"
+                    name="phoneNumber"
+                    placeholder="Enter Phone Number"/>
+          </div>
+          <div class="user-input">
+            <label for="password">Password</label>
+            <input type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Enter Password"/>
+          </div>
+          <div class="user-input">
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password"
+                    id="confirmPassword"
+                    name="confirmPassword"
+                    placeholder="Confirm Password"/>
+          </div>
+        </div>
+        <div class="gender-details-box">
+          <span class="gender-title">Gender</span>
+          <div class="gender-category">
+            <input type="radio" name="gender" id="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="other">
+            <label for="other">Other</label>
+          </div>
+          <div class="user-input">
+            <label for="dob">Dob</label>
+            <input type="date" id="dob" name="dob">
+          </div>
+        </div>
+        <div class="formsubmitbtn">
+          <input type="submit" value="Register">
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

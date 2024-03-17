@@ -1,0 +1,169 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+ul {
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:transparent;
+    backdrop-filter: blur(10px);
+  }
+  
+  li a {
+    display:block;
+    color: rgb(8, 7, 7);
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: underline; 
+  }
+  
+  li a:hover {
+    background-color: #21a6a6;
+  }
+
+  .slidebar{
+
+    display:flex;
+    height: 100%;   
+    line-height: 75px;
+    font-size: 20px; 
+    border-top: 1px solid rgba(255, 255, 255, 0);   
+  }
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    /* background: url('anime-girl-3840x2160-14871.jpeg'); */
+    background-size: cover;
+}
+
+.div0{
+    width: 100%;
+    max-width: 650px;
+    background:transparent;
+    backdrop-filter: blur(3px);
+    padding: 28px;
+    margin: 0 28px;
+    border-radius: 10px;
+    box-shadow: inset -2px 2px 2px white;
+}
+
+.title{
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 6px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    border-bottom: solid 1px white;
+}
+
+.main-user-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+
+
+.user-input{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+}
+
+.user-input label{
+    width: 95%;
+    color: rgb(11, 9, 9);
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+.user-input input{
+    height: 40px;
+    width: 95%;
+    border-radius: 20px;
+    outline: none;
+    border: 1px solid grey;
+    padding: 0 10px;
+}
+
+.gender-title{
+    color:rgb(5, 5, 5);
+    font-size: 24px;
+    font-weight: 600;
+    border-bottom: 1px solid white;
+}
+
+.gender-category{
+    margin: 15px 0;
+    color: rgb(16, 15, 15);
+    text-shadow: white;
+    
+    
+}
+
+.gender-category label{
+    padding: 0 20px 0 5px;
+}
+
+.gender-category label,
+.gender-category input,
+.form-submit-btn input{
+    cursor: pointer;
+}
+
+.formsubmitbtn{
+    margin-top: 40px;
+}
+
+.formsubmitbtn input{
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 10px;
+    border:none;
+    border-radius: 10px;
+    color: rgb(10, 10, 10);
+    background: (rgb(67, 155, 184));
+}
+
+.formsubmitbtn input:hover{
+    background: rgb(41, 106, 171) ;
+    color: rgb(195, 201, 202);
+}
+
+
+    .user-input{
+        margin-bottom: 12px;
+        width: 100%;
+    }
+
+    .user-input :nth-child(2n){
+        justify-content: space-between;
+    }
+
+    .gender-category{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .main-user-info{
+        max-height: 380px;
+        overflow: auto;
+    }
+
+    .main-user-info::-webkit-scrollbar{
+        width: 0;
+    }
